@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextManager {
   static TextStyle regular() {
     return TextStyle(
       fontFamily: 'FuturaPT',
       fontWeight: FontWeight.normal,
-      fontSize: 16,
+      fontSize: 16.sp,
     );
   }
 
@@ -13,7 +14,7 @@ class TextManager {
     return TextStyle(
       fontFamily: 'FuturaPT',
       fontWeight: FontWeight.w500,
-      fontSize: 16,
+      fontSize:20.sp,
     );
   }
 
@@ -21,7 +22,7 @@ class TextManager {
     return TextStyle(
       fontFamily: 'FuturaPT',
       fontWeight: FontWeight.bold,
-      fontSize: 16,
+      fontSize: 22.sp,
     );
   }
 }
