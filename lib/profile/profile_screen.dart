@@ -1,4 +1,6 @@
+import 'package:equina/core/color_mang.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
   static const String routeName = 'Profile Screen';
@@ -6,6 +8,8 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Container(color: ColorManager.lightGrey,),
+    );
   }
 }
