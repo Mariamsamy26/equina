@@ -44,7 +44,7 @@ class ProfileScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        padding: SizeConfig.bace,
+        padding: SizeConfig.base,
         width: double.infinity,
         color: ColorManager.lightGrey.withAlpha(30),
         child: ListView(
@@ -58,12 +58,12 @@ class ProfileScreen extends StatelessWidget {
                     width: 80.w,
                     fit: BoxFit.cover,
                   ),
-                  SizedBox(height: SizeConfig.bettwenH),
+                  SizedBox(height: SizeConfig.betweenH),
                   Text(userName, style: TextManager.medium()),
                 ],
               ),
             ),
-            SizedBox(height: SizeConfig.bettwenH),
+            SizedBox(height: SizeConfig.betweenH),
             Card(
               child: _showList(menuItems),
             ),

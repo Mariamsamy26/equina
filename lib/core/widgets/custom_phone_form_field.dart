@@ -23,7 +23,7 @@ class AppPhoneFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: SizeConfig.bettwenH),
+      padding: EdgeInsets.symmetric(vertical: SizeConfig.betweenH),
       child: IntlPhoneField(
         decoration: InputDecoration(
           labelText: label,

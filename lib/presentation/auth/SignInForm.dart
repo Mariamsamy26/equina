@@ -8,6 +8,7 @@ import '../../core/widgets/custom_elevated_button.dart';
 import '../../core/widgets/custom_phone_form_field.dart';
 import '../../core/widgets/custom_selec_user_button.dart';
 import '../../core/widgets/custom_text_form_field.dart';
+import '../home/home_screen.dart';
 
 class SignInForm extends StatefulWidget {
   const SignInForm({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _SignInFormState extends State<SignInForm> {
   Widget build(BuildContext context) {
     return Container(
       color: ColorManager.lightGrey.withAlpha(20),
-      padding: SizeConfig.bace,
+      padding: SizeConfig.base,
       child: Column(
         children: [
           _UsersType(),
@@ -74,7 +75,9 @@ class _SignInFormState extends State<SignInForm> {
           ),
 
           CustomElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              _navigateToScreen(context,HomeScreen());
+            },
             colorBorder: ColorManager.blue,
             colorButton: ColorManager.blue,
             content: Text(
@@ -87,6 +90,9 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 
+  void _navigateToScreen(BuildContext context, Widget screen) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => screen));
+  }
   Widget _UsersType() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -117,7 +123,7 @@ class _SignInFormState extends State<SignInForm> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: SizeConfig.bettwenH),
+        SizedBox(height: SizeConfig.betweenH),
         Text("Phone Number", style: TextManager.regular()),
         AppPhoneFormField(
           controller: _phoneController,

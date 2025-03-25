@@ -53,7 +53,7 @@ class _AppTextFormFieldState extends State<AppTextFormField> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: SizeConfig.bettwenH),
+      padding: EdgeInsets.symmetric(vertical: SizeConfig.betweenH),
       child: TextFormField(
         readOnly: widget.readOnly,
         obscureText: widget.isPasswordField ? !_isPasswordVisible : false,

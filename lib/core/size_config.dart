@@ -17,10 +17,10 @@ class SizeConfig {
         ? screenHeight! * 0.024
         : screenWidth! * 0.024;
   }
-  static EdgeInsetsGeometry bace =EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w);
+  static EdgeInsetsGeometry base =EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w);
   static EdgeInsetsGeometry titil =EdgeInsets.fromLTRB(15.w, 1.h, 15.w, 10.h);
   static double dividerheight =15.h;
-  static double bettwenH =10.h;
-  static double bettwenW =5.w;
+  static double betweenH =10.h;
+  static double betweenW =5.w;
 
 }

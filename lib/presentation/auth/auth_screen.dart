@@ -39,7 +39,7 @@ class AuthScreen extends StatelessWidget {
             width: 200.w,
             fit: BoxFit.fill,
           ),
-          SizedBox(height: SizeConfig.bettwenH),
+          SizedBox(height: SizeConfig.betweenH),
           Text("Welcon to equina ", style: TextManager.bold()),
           Text(
             "equinaCLUB, book your ",
