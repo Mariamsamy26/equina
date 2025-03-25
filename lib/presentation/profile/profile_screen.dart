@@ -3,9 +3,9 @@ import 'package:equina/core/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../core/models/menuItem_model.dart';
 import '../auth/auth_screen.dart';
-import '../core/models/menuItem_model.dart';
-import '../core/text_mang.dart';
+import '../../core/text_mang.dart';
 
 class ProfileScreen extends StatelessWidget {
   static const String routeName = 'Profile Screen';

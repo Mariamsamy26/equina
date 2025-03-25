@@ -1,7 +1,8 @@
 import 'package:equina/core/color_mang.dart';
-import 'package:equina/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
-import '../core/text_mang.dart';
+import '../../core/size_config.dart';
+import '../../core/text_mang.dart';
+import '../profile/profile_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = 'Home Screen';
