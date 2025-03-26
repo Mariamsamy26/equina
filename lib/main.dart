@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: HomeScreen.routeName,
+          initialRoute: AuthScreen.routeName,
           routes: {
             AuthScreen.routeName: (context) => AuthScreen(),
             HomeScreen.routeName: (context) => HomeScreen(),

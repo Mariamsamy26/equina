@@ -39,7 +39,8 @@ class CustomCard extends StatelessWidget {
     );
 
     return Container(
-      width: double.infinity,
+      margin: EdgeInsets.symmetric(horizontal: 12.w,vertical: 8.h),
+      height: 300.h,
       decoration: BoxDecoration(
         color: ColorManager.blue,
         borderRadius: BorderRadius.only(
@@ -58,7 +59,7 @@ class CustomCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 20.h, left: 15.w),
+                  padding: EdgeInsets.only(top: 20.h, left: 25.w),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -95,6 +96,7 @@ class CustomCard extends StatelessWidget {
                     ],
                   ),
                 ),
+                Spacer(),
                 //price
                 Container(
                   padding: EdgeInsets.all(2.w),
@@ -137,7 +139,7 @@ class CustomCard extends StatelessWidget {
                   ),
                   child: Image.asset(
                     imagePath,
-                    height: 280.h,
+                    height: double.infinity,
                     width: double.infinity,
                     fit: BoxFit.fill,
                   ),
@@ -150,7 +152,7 @@ class CustomCard extends StatelessWidget {
                   child: Container(
                     padding: EdgeInsets.all(5.w),
                     decoration: BoxDecoration(
-                      color: ColorManager.purple.withAlpha(200),
+                      color: ColorManager.purple.withAlpha(230),
                       borderRadius: BorderRadius.circular(12.r),
                       border: Border.all(color: white, width: 1.5.w),
                     ),
